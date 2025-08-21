@@ -46,7 +46,7 @@ const Navbar = () => {
         },
         {
           name: "Training",
-          link: "/appointment",
+          link: "/training",
         },
         {
           name: "Make a Purchase",
@@ -71,7 +71,7 @@ const Navbar = () => {
         <img src={logo} alt="Logo" width={300} height={80} />
       </div>
       <div className="container w-full relative flex justify-end items-center">
-        <ul className={`flex md:static bg-[#C8D1D9] ${activeMenu ? 'flex' : 'hidden md:flex'} flex-col md:flex-row md:w-fit w-screen pl-10 py-4 text-start absolute top-10 items-center`}>
+        <ul className={`flex md:static bg-[#C8D1D9] ${activeMenu ? 'flex fixed top-16 left-0 right-0' : 'hidden md:flex'} flex-col md:flex-row md:w-fit md:relative pl-10 py-4 text-start items-center`}>
           {links.map((link, index) => {
             return (
               <li

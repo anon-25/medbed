@@ -34,15 +34,15 @@ export default function Contact() {
   return (
     <div className="wrap flex items-center justify-center">
       <div className="flex flex-col gap-4 max-w-[80%] p-8 items-center shadow-sm rounded-[10px]">
-        <h1 className="font-noto font-medium text-[40px] text-[#2c3e50]">
+        <h1 className="font-noto font-medium text-2xl md:text-[40px] text-[#2c3e50]">
           Contact Us
         </h1>
-        <h2 className="font-noto text-lg text-[#66798e]">
+        <h2 className="font-noto text-sm md:text-left text-center md:text-lg text-[#66798e]">
           Feel free to reach out to us with any questions or inquiries. We'd
           love to hear from you!
         </h2>
 
-        <form onSubmit={(e) => handleForm(e)} className="form flex mt-4 flex-col w-[400px] gap-4">
+        <form onSubmit={(e) => handleForm(e)} className="form flex mt-4 flex-col md:w-[400px] gap-4">
           <input
             className="p-3 outline-none rounded-lg border border-[#cfd8dc]"
             type="text"
@@ -74,7 +74,7 @@ export default function Contact() {
         <div className="flex items-center mt-8">
           {icons.map((item, index) => (
             <div className="p-4 icons cursor-pointer mx-2 rounded-full bg-[#E2E8F0]">
-                <a href={item.link} key={index} className=""> <item.icon className="text-2xl" /> </a>
+                <a href={item.link} key={index} className=""> <item.icon className="md:text-2xl" /> </a>
             </div>
           ))}
         </div>

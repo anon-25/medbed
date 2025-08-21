@@ -12,8 +12,8 @@ export default function Appointment() {
   const navigate = useNavigate();
   return (
     <div className="wrapper bg-[#E0F7FA] py-10 font-inter">
-      <div className="bg-white flex flex-col items-center mx-[62px] rounded-[15px] p-10">
-        <h1 className="text-center text-[40px] font-inter mb-[30px] text-[#076] font-medium">
+      <div className="bg-white flex flex-col items-center md:mx-[62px] rounded-[15px] p-10">
+        <h1 className="text-center text-3xl md:text-[40px] font-inter mb-[30px] text-[#076] font-medium">
           Med Bed Appointment Registration Form
         </h1>
         <div className="flex items-start justify-start w-full">
@@ -31,7 +31,7 @@ export default function Appointment() {
           team will contact you to finalize your appointment.
         </p>
         <div className="p-5 mb-[30px] bg-[#f5f5f5] border rounded-[10px] hover:bg-[#E0F2F7] transition-all border-[#e0f7fa]">
-          <h2 className="text-[32px] pb-[5px] font-medium text-[#076] pt-[30px]">
+          <h2 className="md:text-[32px] text-2xl pb-[5px] font-medium text-[#076] pt-[30px]">
             About Our Med Bed Centers
           </h2>
           <hr className="text-[#B2EBF2] mb-[15px] border-t-2" />
@@ -44,7 +44,7 @@ export default function Appointment() {
           </p>
         </div>
         <div className="p-5 mb-[30px] bg-[#f5f5f5] border rounded-[10px] hover:bg-[#E0F2F7] transition-all border-[#e0f7fa]">
-          <h2 className="text-[32px] pb-[5px] font-medium text-[#076] pt-[30px]">
+          <h2 className="md:text-[32px] text-2xl pb-[5px] font-medium text-[#076] pt-[30px]">
             Registration Process
           </h2>
           <hr className="text-[#B2EBF2] mb-[15px] border-t-2" />
@@ -57,7 +57,7 @@ export default function Appointment() {
           </p>
         </div>
         <div className="p-5 mb-[30px] w-full bg-[#f5f5f5] border rounded-[10px] hover:bg-[#E0F2F7] transition-all border-[#e0f7fa]">
-          <h2 className="text-[32px] pb-[5px] font-medium text-[#076] pt-[30px]">
+          <h2 className="md:text-[32px] text-2xl pb-[5px] font-medium text-[#076] pt-[30px]">
             Patient Information
           </h2>
           <hr className="text-[#B2EBF2] mb-[15px] border-t-2" />
@@ -159,7 +159,7 @@ export default function Appointment() {
             </div>
             <div className="flex flex-col gap-2 mb-3">
               <label className="font-bold text-[#004d40]">Gender</label>
-              <div className="flex gap-4">
+              <div className="flex md:flex-row flex-col gap-4">
                 <div className="flex items-center gap-2">
                   <input
                     type="radio"
@@ -208,7 +208,7 @@ export default function Appointment() {
                     type="text"
                     name="other"
                     id="other"
-                    className="px-2 py-1 border-[#4dd0e1] outline-none rounded-md bg-white border"
+                    className="px-2 py-1 w-[50%] md:w-full border-[#4dd0e1] outline-none rounded-md bg-white border"
                   />
                 </div>
               </div>
@@ -251,7 +251,7 @@ export default function Appointment() {
           </form>
         </div>
         <div className="p-5 mb-[30px] bg-[#f5f5f5] border rounded-[10px] hover:bg-[#E0F2F7] transition-all border-[#e0f7fa]">
-          <h2 className="text-[32px] pb-[5px] font-medium text-[#076] pt-[30px]">
+          <h2 className="md:text-[32px] text-2xl pb-[5px] font-medium text-[#076] pt-[30px]">
             What to Expect After Registration
           </h2>
           <hr className="text-[#B2EBF2] mb-[15px] border-t-2" />
@@ -270,7 +270,7 @@ export default function Appointment() {
           </p>
         </div>
         <div className="p-5 mb-[30px] bg-[#f5f5f5] border rounded-[10px] hover:bg-[#E0F2F7] transition-all border-[#e0f7fa]">
-          <h2 className="text-[32px] pb-[5px] font-medium text-[#076] pt-[30px]">
+          <h2 className="md:text-[32px] text-2xl pb-[5px] font-medium text-[#076] pt-[30px]">
             Med Bed Ability
           </h2>
           <hr className="text-[#B2EBF2] mb-[15px] border-t-2" />
@@ -283,7 +283,7 @@ export default function Appointment() {
           </p>
         </div>
         <div className="p-5 mb-[30px] bg-[#f5f5f5] border rounded-[10px] hover:bg-[#E0F2F7] transition-all border-[#e0f7fa]">
-          <h2 className="text-[32px] pb-[5px] font-medium text-[#076] pt-[30px]">
+          <h2 className="md:text-[32px] text-2xl pb-[5px] font-medium text-[#076] pt-[30px]">
             Overview of Your Med Bed Appointment
           </h2>
           <hr className="text-[#B2EBF2] mb-[15px] border-t-2" />
@@ -333,7 +333,7 @@ export default function Appointment() {
         </div>
         <button
           type="submit"
-          className="text-lg text-white px-[30px] py-[10px] cursor-pointer rounded-lg bg-[#00bcd4] hover:bg-[#00838f]"
+          className="md:text-lg text-sm text-white px-[30px] py-[10px] cursor-pointer rounded-lg bg-[#00bcd4] hover:bg-[#00838f]"
         >
           Register
         </button>

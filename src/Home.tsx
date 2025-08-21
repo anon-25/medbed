@@ -63,8 +63,8 @@ const Home = () => {
         items={items}
         autoPlayInterval={5000}
       />
-      <div className="bg-[#C8D1D9] px-[77px] mt-2 flex flex-col items-center gap-6 py-28 pb-14">
-        <Title text="WHAT IS A MED BED?" />
+      <div className="bg-[#C8D1D9] px-6 md:px-[77px] mt-2 flex flex-col items-center gap-6 py-28 pb-14">
+        <Title text="WHAT IS A MED BED?" className="text-center" />
         <p className="text-center font-noto text-lg text-[#212529]">
           Quantom Healing Med-Beds are revolutionary devices designed to
           facilitate advanced medical treatments through cutting-edge
@@ -97,7 +97,7 @@ const Home = () => {
           </p>
         </div>
       </section>
-      <div id="about" className="mt-2 bg-[#C8D1D9] px-[60px] flex flex-col items-center justify-center text-center pt-28 pb-14">
+      <div id="about" className="mt-2 bg-[#C8D1D9] px-6 md:px-[60px] flex flex-col items-center justify-center text-center pt-28 pb-14">
         <Title text="About Us" />
         <p className="font-noto text-[19px] pb-[30px] text-[#212529]">
           Restoring True Healing Through Med Bed Technology
@@ -122,7 +122,7 @@ const Home = () => {
           Meet Our Team
         </a>
       </div>
-      <div className="bg-[#7F7F7F] py-20 px-[60px] flex flex-col items-center justify-center text-center">
+      <div className="bg-[#7F7F7F] py-20 px-6 md:px-[60px] flex flex-col items-center justify-center text-center">
         <Title text="A Deeper Dive Into Our Services" className="mb-2" />
         <p className="text-lg mb-[30px] text-[#212529]">Think of MedBed as the central hub, leveraging cutting-edge technology to enhance diagnostics, treatment, and overall well-being across our service offerings. It's the innovative application of these medical resources that binds our various specialized services together, guaranteeing a technologically advanced and user-centric approach to health. Now, let's explore the different types of MedBed services and the sophisticated tools they employ.</p>
         <a
@@ -136,7 +136,7 @@ const Home = () => {
         <h3 className="font-open font-bold text-[32px] pb-4 text-[#212529]">Meet Our Team:</h3>
         <div className="div flex flex-wrap gap-[30px]">
           {teams.map((team, index) => (
-            <div key={index} className="object-cover max-w-[30%]">
+            <div key={index} className="object-cover md:max-w-[30%]">
               <div className="card mr-[10px] rounded-[10px] border border-[#00000020] rounded-b-[20px] mb-[10px]">
                 <img src={team.image} alt="Portrait" height={400} className="rounded-[10px] h-[400px] min-w-full object-cover" />
                 <div className="text p-5 flex flex-col gap-5 ">
@@ -157,7 +157,7 @@ const Home = () => {
         </div>
       </div>
       <Testimonials />
-      <p className="mx-[60px] px-[15px] mt-5 font-noto italic font-medium text-[#212529]">These are just a few of the many powerful testimonials we receive from around the world. Healing knows no borders--and neither does hope. We welcome you to write your own story of transformation. The Med Bed Healing Center is here for you.</p>
+      <p className="md:mx-[60px] px-[15px] mt-5 font-noto italic font-medium text-[#212529]">These are just a few of the many powerful testimonials we receive from around the world. Healing knows no borders--and neither does hope. We welcome you to write your own story of transformation. The Med Bed Healing Center is here for you.</p>
     </div>
   );
 };

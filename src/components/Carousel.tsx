@@ -48,12 +48,12 @@ const Carousel: React.FC<CarouselProps> = ({
             </div>
             
             {/* Carousel content */}
-            <div className="relative h-full flex items-center justify-center text-white px-12">
+            <div className="relative h-full flex items-center justify-center mb-6 pt-10 text-white px-12">
                 <div className="text-center max-w-7xl">
-                    <h2 className="text-6xl font-noto font-bold mb-4 transition-opacity duration-500">
+                    <h2 className="md:text-6xl text-lg mb-6 font-noto font-bold md:mb-4 transition-opacity duration-500">
                         {items[activeIndex].title}
                     </h2>
-                    <p className="text-lg font-bold transition-opacity duration-500">
+                    <p className="md:text-lg text-sm md:font-bold transition-opacity duration-500">
                         {items[activeIndex].description}
                     </p>
                 </div>

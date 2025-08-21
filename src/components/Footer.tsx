@@ -16,9 +16,9 @@ const links = [
 export default function Footer({className} : {className?: string}) {
     const year = new Date().getFullYear();
     return(
-        <footer className={`bg-[#333333] items-center flex justify-around mt-9 text-white py-6 ${className}`}>
+        <footer className={`bg-[#333333] md:text-[16px] text-xs items-center gap-4 md:gap-0 flex md:flex-row flex-col justify-around mt-9 text-white py-6 ${className}`}>
             <div className="">
-                &copy; {year} Med Bed Healing <br />Center. All rights reserved.
+                &copy; {year} Med Bed Healing <br className="md:flex hidden" />Center. All rights reserved.
             </div>
             <div className="flex gap-6">
                 {links.map((link, index) => (

@@ -2,23 +2,23 @@ export default function Purchase() {
   return (
     <div className="flex flex-col font-serif justify-center items-center">
       <div className="w-[85%] bg-[#F0F4F4] my-5 rounded-lg text-center">
-        <h1 className="font-serif font-medium text-2xl text-[#00334d] text-center bg-[#E0F7FA] border-b border-b-[#0000002d] rounded-t-lg p-4">
+        <h1 className="font-serif font-medium text-xl md:text-2xl text-[#00334d] text-center bg-[#E0F7FA] border-b border-b-[#0000002d] rounded-t-lg p-4">
           Quantum Healing Med-Bed Purchase Form
         </h1>
-        <p className="font-serif text-xl text-[#212529bf] mt-6">
+        <p className="font-serif md:text-xl text-[#212529bf] mt-6">
           Welcome to the Future of Healing and Wellness. Please complete this
           form to begin your journey towards owning a Quantum Healing Med-Bed.
         </p>
-        <p className="font-serif text-xl text-[#212529] mt-6">
+        <p className="font-serif md:text-xl text-[#212529] mt-6">
           Each med bed type addresses specific health and wellness needs,
           offering life-changing solutions to a variety of medical challenges.
         </p>
-        <p className="font-serif text-xl text-[#212529bf] mt-2">
+        <p className="font-serif md:text-xl text-[#212529bf] mt-2">
           Explore our advanced Med-Bed models and select the one that best suits
           your aspirations for well-being.
         </p>
 
-        <form className="p-6 flex flex-col gap-3">
+        <form className="p-6 md:text-[16px] text-sm flex flex-col gap-3">
           <div className="flex items-start flex-col gap-2">
             <label htmlFor="name" className="font-medium ">
               Full Name:
@@ -79,7 +79,7 @@ export default function Purchase() {
               className="p-3 rounded-md w-full bg-[#e0f7fa] border border-[#80ced1]"
             />
           </div>
-          <p className="font-medium text-2xl text-left text-[#ffa500] mb-2">
+          <p className="font-medium text-lg md:text-2xl text-left text-[#ffa500] mb-2">
             Pricing & Fees: We offer flexible pricing plans to accommodate
             different needs:
           </p>
@@ -265,7 +265,7 @@ export default function Purchase() {
           </div>
           <div className="flex items-start gap-2">
             <input type="checkbox" id="terms" className="mt-1" required />
-            <label htmlFor="terms" className="font-medium">
+            <label htmlFor="terms" className="font-medium md:text-[16px] text-xs md:text-center text-left">
               By submitting this form, you acknowledge that you have read and
               agree to the terms and conditions outlined by Med Bed Healing
               Center.
@@ -279,7 +279,7 @@ export default function Purchase() {
               Submit Form
             </button>
           </div>
-          <p className="text-xl text-[#212529bf] p-4">Please note: Prices include a standard warranty, installation guidance, and technical support. Financing options are available upon request.</p>
+          <p className="md:text-xl text-sm text-[#212529bf] md:p-4">Please note: Prices include a standard warranty, installation guidance, and technical support. Financing options are available upon request.</p>
         </form>
       </div>
       <p className="text-left w-[85%] pb-5">&copy; {new Date().getFullYear()} Med Bed Healing Center. All rights reserved.</p>

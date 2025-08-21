@@ -226,23 +226,23 @@ export default function Media() {
     <div className="">
       <div className="flex flex-col items-center justify-center text-[#212529] mx-[38px] px-4 p-4">
         <img src="/assets/big.png" alt="Logo" width={1110} height={400} />
-        <p className="italic font-serif text-[21px]">
+        <p className="italic font-serif md:text-[21px]">
           This page is dedicated to the voices of those who haev experienced
           profound physical, emotional, and energetic healing through thier Med
           Bed sessions. From Chronic illnesses reversed to new hope found. each
           story shared here reflects the true potential of natural, non-invasive
           healing when guided by intention and advanced technology
         </p>
-        <p className="italic font-serif text-[21px]">
+        <p className="italic font-serif md:pb-0 pb-6 md:text-[21px]">
           We invite you to read through these testimonials -- and when you're
           ready, we look forwward to helping you write your own story of
           transformation.
         </p>
         <div className="big-card transition-all flex flex-col items-start justify-center">
-          <div className="vid bg-black rounded-md py-[100px]">
+          <div className="vid bg-black rounded-md md:py-[100px]">
             <video
               src="https://medbedhealingcenter.com/vid/mbintro.mp4"
-              className="mx-[235px]"
+              className="md:mx-[235px]"
               controls
               autoPlay
               width={640}
@@ -250,10 +250,10 @@ export default function Media() {
             ></video>
           </div>
           <div className="text p-6 shadow-xl transition-all rounded-b-2xl w-full">
-            <h2 className="font-inter font-semibold text-xl mb-3 text-[#2d3748]">
+            <h2 className="font-inter font-semibold md:text-xl mb-3 text-[#2d3748]">
               Welcome to Our Med Bed Testimonial Page
             </h2>
-            <p className="font-inter mb-4 text-[#4a5568]">
+            <p className="font-inter mb-4 md:text-[16px] text-sm text-[#4a5568]">
               Real people, Real Healing, Real Transformation.
             </p>
           </div>
@@ -262,7 +262,7 @@ export default function Media() {
           {videoCards.map((item, index) => (
             <div
               key={index}
-              className="big-card transition-all flex flex-col w-[49%] mb-8 rounded-lg items-start justify-center"
+              className="big-card transition-all flex flex-col md:w-[49%] mb-8 rounded-lg items-start justify-center"
             >
               <div className="vid bg-black rounded-lg w-full flex justify-center">
                 <video
@@ -289,7 +289,7 @@ export default function Media() {
         </h2>
         {faq.map((item, index) => (
           <div
-            className="w-[60%] mb-5 faq-card transition-all shadow-xl"
+            className="md:w-[60%] mb-5 faq-card transition-all shadow-xl"
             key={index}
           >
             <h3 className="bg-[#F8F9FA] pb-6 border-[#dee2e6] border rounded-t-lg font-medium text-lg text-[#2c3e40] font-inter p-4">
@@ -304,7 +304,7 @@ export default function Media() {
         <h2 className="font-inter font-medium text-2xl mb-[30px]">
           Appointments & Scheduling
         </h2>
-        <div className="w-[60%] mb-5 faq-card transition-all shadow-xl">
+        <div className="md:w-[60%] mb-5 faq-card transition-all shadow-xl">
           <h3 className="bg-[#F8F9FA] pb-6 border-[#dee2e6] border rounded-t-lg font-medium text-lg text-[#2c3e40] font-inter p-4">
             How do i book an appointment?
           </h3>
@@ -342,7 +342,7 @@ export default function Media() {
         </div>
         {moreFaq.map((item, index) => (
           <div
-            className="w-[60%] mb-5 faq-card transition-all shadow-xl"
+            className="md:w-[60%] mb-5 faq-card transition-all shadow-xl"
             key={index}
           >
             <h3 className="bg-[#F8F9FA] pb-6 border-[#dee2e6] border rounded-t-lg font-medium text-lg text-[#2c3e40] font-inter p-4">
@@ -359,7 +359,7 @@ export default function Media() {
         </h2>
         {evenMoreFaq.map((item, index) => (
           <div
-            className="w-[60%] mb-5 faq-card transition-all shadow-xl"
+            className="md:w-[60%] mb-5 faq-card transition-all shadow-xl"
             key={index}
           >
             <h3 className="bg-[#F8F9FA] pb-6 border-[#dee2e6] border rounded-t-lg font-medium text-lg text-[#2c3e40] font-inter p-4">
@@ -371,7 +371,7 @@ export default function Media() {
             </p>
           </div>
         ))}
-        <div className="w-[60%] mb-5 faq-card transition-all shadow-xl">
+        <div className="md:w-[60%] mb-5 faq-card transition-all shadow-xl">
           <p className="border border-[#dee2e6] rounded-lg p-5 pb-9">
             To apply, fill the training form on our website or contact us
             directly via email:{" "}

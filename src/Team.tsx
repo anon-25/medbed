@@ -66,12 +66,12 @@ export function Team() {
   return (
     <div className="text-[#212529] font-serif bg-[#F0F0F0]">
       <Navbar />
-      <h1 className="text-[#212529] pt-32 text-center font-bold text-[40px] font-serif">
+      <h1 className="text-[#212529] pt-32 text-center font-bold text-2xl md:text-[40px] font-serif">
         Healing the Body Through Energy, Frequency & Advanced Technology
       </h1>
       <div className="flex bg-white items-center flex-col justify-center mx-8 shadow rounded-[10px] mt-8 px-10 py-5">
-        <div className="flex font-serif gap-[4%] text-[20px] mt-8 justify-center text-center">
-          <div className="w-[48%]">
+        <div className="flex md:flex-row flex-col font-serif gap-20 md:gap-[4%] text-[20px] mt-8 justify-center text-center">
+          <div className="md:w-[48%]">
             <h2 className="font-serif text-[32px] font-bold">
               Welcome to Med Bed Healing Center
             </h2>
@@ -94,7 +94,7 @@ export function Team() {
               </span>
             </p>
           </div>
-          <div className="w-[48%]">
+          <div className="md:w-[48%]">
             <h2 className="font-serif text-[32px] font-bold">Our Mission</h2>
             <p className="pb-12 pt-6">
               To bridge the gap between ancient wisdom and futuristic innovation
@@ -103,10 +103,10 @@ export function Team() {
             </p>
           </div>
         </div>
-        <h2 className="text-[32px] pt-12 pb-12 text-left w-full font-bold">
+        <h2 className="md:text-[32px] text-2xl text-center pt-12 pb-6 md:pb-12 md:text-left w-full font-bold">
           What We Offer
         </h2>
-        <ul className="text-left text-[21px] w-full list-disc">
+        <ul className="text-left md:text-[21px] w-full list-disc">
           {offers.map((offer, index) => (
             <div key={index}>
               <li className="py-4">{offer}</li>
@@ -114,8 +114,8 @@ export function Team() {
             </div>
           ))}
         </ul>
-        <div className="flex font-serif gap-[4%] text-[20px] mt-8 justify-center text-center">
-          <div className="w-[48%]">
+        <div className="flex font-serif md:flex-row flex-col gap-20 md:gap-[4%] text-[20px] mt-8 justify-center text-center">
+          <div className="md:w-[48%]">
             <h2 className="font-serif text-[32px] font-bold">
               Why we're different
             </h2>
@@ -134,7 +134,7 @@ export function Team() {
               </span>
             </p>
           </div>
-          <div className="w-[48%]">
+          <div className="md:w-[48%]">
             <h2 className="font-serif text-[32px] font-bold">
               The Future of Healing is Now
             </h2>
@@ -151,23 +151,23 @@ export function Team() {
             </p>
           </div>
         </div>
-        <h2 className="text-[40px] font-bold pb-11">
+        <h2 className="md:text-[40px] text-2xl text-center md:text-left font-bold pb-11">
           Types of MedBeds at Med Bed Healing Center
         </h2>
-        <p className="font-medium pb-10 text-[28px]">
+        <p className="font-medium pb-10 md:text-[28px]">
           At Med Bed Healing Center, we offer a variety of cutting-edge Quantum
           Healing Med Beds designed to support the body's natural intelligence
           to heal, regenerate, and rebalance on all levels—physical, emotional,
           energetic, and even spiritual.
         </p>
-        <p className="font-medium text-[28px]">
+        <p className="font-medium md:text-[28px]">
           Each Med Bed type is built with a specialized purpose, harnessing
           quantum energy, light frequency, plasma fields, and holographic
           diagnostics to provide personalized, non-invasive healing experiences.
         </p>
         <ul className="mt-8 list-disc">
           {beds.map((bed, index) => (
-            <li key={index} className="mt-8 text-2xl">
+            <li key={index} className="mt-8 md:text-2xl">
               <span className="font-bold">
                 {" "}
                 {index + 1}. {bed.name}:{" "}
@@ -176,7 +176,7 @@ export function Team() {
             </li>
           ))}
         </ul>
-        <p className="mt-16 font-medium text-[20px]">
+        <p className="mt-16 font-medium text-sm md:text-[20px]">
           Each bed is operated by a trained and certified Med Bed specialist and
           aligned with your individual healing blueprint. Whether you're
           recovering from illness, looking to restore youthfulness, or seeking
@@ -186,65 +186,65 @@ export function Team() {
       <h2 className="text-center mt-12 mb-8 font-bold text-[32px]">
         How Med Beds Actually work-- The Healing Philosophy
       </h2>
-      <p className="mx-8 text-[21px] mb-12">
+      <p className="mx-8 md:text-[21px] mb-12">
         At the Med Bed Healing Center, we believe the human body has an
         extraordinary ability to heal itself. Med Beds don't replae your natural
         helaing power--they amplify it using quantum frequencies, energetic
         alignment, and regenerative fields that restore the body to balance.
       </p>
-      <h2 className="text-center mt-12 mb-8 font-bold text-[32px]">
+      <h2 className="text-center mt-12 mb-8 font-bold text-2xl md:text-[32px]">
         The Technology Behind it--Advanced Science Meets Natural Healing
       </h2>
-      <p className="mx-8 text-[21px] mb-12">Med Beds use a combination of.</p>
-      <ul className="text-[21px] mx-8 list-disc">
+      <p className="mx-8 md:text-[21px] mb-12">Med Beds use a combination of.</p>
+      <ul className="md:text-[21px] mx-8 list-disc">
         {techList.map((tech, index) => (
           <li key={index} className="pb-8">
             {tech}
           </li>
         ))}
       </ul>
-      <p className="my-8 mb-12 mx-8 text-[21px]">
+      <p className="my-8 mb-12 mx-8 md:text-[21px]">
         These tools work together to detect blockages, correct energetic
         imbalances, and activate your body's self-healing process.
       </p>
-      <h2 className="text-center mt-12 mb-8 font-bold text-[32px]">
+      <h2 className="text-center mt-12 mb-8 font-bold text-2xl md:text-[32px]">
         What the Med Bed Actually Does--Your Blueprint for Healing
       </h2>
-      <p className="mx-8 text-[21px] mb-12">Every session includes:</p>
-      <ul className="text-[21px] mx-8 list-disc">
+      <p className="mx-8 md:text-[21px] mb-12">Every session includes:</p>
+      <ul className="md:text-[21px] mx-8 list-disc">
         {sessionList.map((tech, index) => (
           <li key={index} className="pb-8">
             {tech}
           </li>
         ))}
       </ul>
-      <h2 className="text-center mt-12 mb-8 font-bold text-[32px]">
+      <h2 className="text-center mt-12 mb-8 font-bold text-2xl md:text-[32px]">
         Conditions Med Beds Can Support--Restoring Health at the Root Cause
       </h2>
-      <p className="mx-8 text-[21px] mb-12">
+      <p className="mx-8 md:text-[21px] mb-12">
         Med Beds have shown remarkable results with:
       </p>
-      <ul className="text-[21px] mx-8 list-disc">
+      <ul className="md:text-[21px] mx-8 list-disc">
         {resultList.map((tech, index) => (
           <li key={index} className="pb-8">
             {tech}
           </li>
         ))}
       </ul>
-      <h2 className="text-center mt-12 mb-8 font-bold text-[32px]">
+      <h2 className="text-center mt-12 mb-8 font-bold text-2xl md:text-[32px]">
         What to Expect in A Session--Non-invasive, Safe, Transformational.
       </h2>
-      <ul className="text-[21px] mx-8 list-disc">
+      <ul className="md:text-[21px] mx-8 list-disc">
         {expectList.map((tech, index) => (
           <li key={index} className="pb-8">
             {tech}
           </li>
         ))}
       </ul>
-      <h2 className="text-center mt-12 mb-8 font-bold text-[32px]">
+      <h2 className="text-center mt-12 mb-8 font-bold text-2xl md:text-[32px]">
         Why it Works--Healing Through Frequency, Not Force
       </h2>
-      <p className="mx-8 text-[21px] mb-12">
+      <p className="mx-8 md:text-[21px] mb-12">
         When the body is returned to it's <span className="font-bold"> ideal energetic frequency</span>, cells regenerete, systems rebalance, and clarity returns. No surgery, no pills--just <span className="font-bold"> vibration, light, and plasma energy</span> restoring what nature intended.
       </p>
       <Footer />
