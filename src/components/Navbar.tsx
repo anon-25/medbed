@@ -1,4 +1,4 @@
-import React, { act, useState } from "react";
+import { useState } from "react";
 import { FaCaretDown } from "react-icons/fa";
 import { IoIosMenu } from "react-icons/io";
 import logo from "/assets/logo.png";
