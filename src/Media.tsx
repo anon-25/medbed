@@ -192,17 +192,17 @@ const moreFaq = [
 ];
 
 const appointmentList = [
-  { country: "canada", mail: "Medbedteam.canada@gmail.com" },
+  { country: "canada", mail: "Medbedbooking.canada@gmail.com" },
   {
     country: "united kingdom",
-    mail: "Medbedcentre@gmail.com",
+    mail: "Medbedbooking.uk@gmail.com",
     shortForm: "UK",
   },
-  { country: "United states", shortForm: "USA" },
-  { country: "germany", mail: "Medbedteam.germany@gmail.com" },
-  { country: "australia", mail: "Medbedteam.australia@gmail.com" },
+  { country: "United states", shortForm: "USA", mail: "Medbedbooking.usa@gmail.com" },
+  { country: "germany", mail: "Medbedbooking.germany@gmail.com" },
+  { country: "australia", mail: "Medbedbooking.australia@gmail.com" },
   { country: "Italy", mail: "Medbedteam.italy@gmail.com" },
-  { country: "france", mail: "medbedhealing.france@gmail.com" },
+  { country: "france", mail: "Medbedfrance@gmail.com" },
   { country: "switzerland", mail: "medbedteam.switzerland@gmail.com" },
   { country: "japan", mail: "medbedappointment.japan@gmail.com" },
   { country: "netherlands", mail: "medbed.netherlands@gmail.com" },
