@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 const Terms: React.FC = () => (
   <div className="">
     <div
-      className="mx-[62px]"
+      className="md:mx-[62px]"
       style={{
         padding: "24px",
         fontFamily: "Segoe UI, Arial, sans-serif",
@@ -14,7 +14,7 @@ const Terms: React.FC = () => (
       <div className="flex justify-start items-start">
         <img src="/assets/logo.png" alt="" width={355} height={125} />
         <h1
-          className="font-medium text-[40px] mt-6 mb-4"
+          className="font-medium md:flex hidden md:text-[40px] mt-6 mb-4"
           style={{ textAlign: "center", color: "#0d6efd", marginBottom: 32 }}
         >
           Terms of Service
@@ -160,7 +160,7 @@ const Terms: React.FC = () => (
       </h3>
       <p>
         If you have any questions about these Terms of Service, please contact
-        us at <a className="underline text-[#0d6efd]" href="mailto:medbedteam@gmail.com">medbedteam@gmail.com</a>.
+        us at <a className="underline text-[#0d6efd]" href="mailto:Info.medbedcenter@gmail.com">Info.medbedcenter@gmail.com</a>.
       </p>
 
       <p style={{ fontSize: "0.95em", color: "#555" }}>

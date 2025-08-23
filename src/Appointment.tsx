@@ -313,7 +313,7 @@ export default function Appointment() {
             To complete your payment for the registration contact the MedBed
             Coordination Team via email @:{" "}
             <a
-              href="info@medbedhealingcenter.com"
+              href="Info.medbedcenter@gmail.com"
               className="underline font-normal text-[#0d6ef]"
             >
               {" "}
@@ -323,7 +323,7 @@ export default function Appointment() {
           <p className="text-[#004d40] font-bold my-4">
             or via Telegram @:
             <a
-              href="info@medbedhealingcenter.com"
+              href="https://t.me/Medbedbooking"
               className="underline font-normal text-[#0d6ef]"
             >
               {" "}

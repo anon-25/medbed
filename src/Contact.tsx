@@ -1,25 +1,20 @@
-import { FaWhatsapp, FaTelegram, FaEnvelope, FaFacebook } from "react-icons/fa";
+import { FaWhatsapp, FaTelegram, FaEnvelope } from "react-icons/fa";
 
 const icons = [
     {
         icon: FaWhatsapp,
-        link: "https://wa.me/1234567890",
+        link: "https://wa.me/+14482009390",
         label: "WhatsApp"
     }, 
     {
         icon: FaTelegram,
-        link: "https://t.me/yourchannel",
+        link: "https://t.me/Medbedbooking",
         label: "Telegram"
     },
     {
         icon: FaEnvelope,
-        link: "mailto:text@gmail.com",
+        link: "mailto:Info.medbedcenter@gmail.com",
         label: "Email"
-    },
-    {
-        icon: FaFacebook,
-        link: "https://www.facebook.com/yourpage",
-        label: "Facebook"
     }
 ]
 

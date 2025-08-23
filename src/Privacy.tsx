@@ -10,7 +10,7 @@ const Privacy: React.FC = () => (
         fontFamily: "Segoe UI, Arial, sans-serif",
         color: "#222",
       }}
-      className="gap-6 mx-[62px]"
+      className="gap-6 md:mx-[62px]"
     >
       <h1 className="font-medium text-[40px]" style={{ textAlign: "center", color: "#0d6efd", marginBottom: 32 }}>
         Privacy Policy
@@ -92,7 +92,7 @@ const Privacy: React.FC = () => (
       </ul>
       <p className="my-6">
         To exercise these rights, please contact us at{" "}
-        <a href="mailto:medbedteam@gmail.com" className="underline text-[#0d6efd]">medbedteam@gmail.com</a>.
+        <a href="mailto:Info.medbedcenter@gmail.com" className="underline text-[#0d6efd]">Info.medbedcenter@gmail.com</a>.
       </p>
 
       <h3 className="mt-6 mb-4 text-2xl font-medium" style={{ color: "#6c757d" }}>Changes to This Policy</h3>

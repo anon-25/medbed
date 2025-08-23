@@ -201,11 +201,11 @@ const appointmentList = [
   { country: "United states", shortForm: "USA", mail: "Medbedbooking.usa@gmail.com" },
   { country: "germany", mail: "Medbedbooking.germany@gmail.com" },
   { country: "australia", mail: "Medbedbooking.australia@gmail.com" },
-  { country: "Italy", mail: "Medbedteam.italy@gmail.com" },
+  { country: "Italy", mail: "Info.medbedcenter@gmail.com" },
   { country: "france", mail: "Medbedfrance@gmail.com" },
-  { country: "switzerland", mail: "medbedteam.switzerland@gmail.com" },
-  { country: "japan", mail: "medbedappointment.japan@gmail.com" },
-  { country: "netherlands", mail: "medbed.netherlands@gmail.com" },
+  { country: "switzerland", mail: "Info.medbedcenter@gmail.com" },
+  { country: "japan", mail: "Info.medbedcenter@gmail.com" },
+  { country: "netherlands", mail: "Info.medbedcenter@gmail.com" },
 ];
 
 const faq = [
@@ -321,7 +321,7 @@ export default function Media() {
                 <a
                   className="font-inter hover:underline capitalize text-[#0056b3]"
                   href={`mailto:${
-                    item.mail ? item.mail : "medbedteam@gmail.com"
+                    item.mail ? item.mail : "Info.medbedcenter@gmail.com"
                   }`}
                 >
                   {" "}
@@ -336,7 +336,7 @@ export default function Media() {
             ))}
             <p>
               If your country isn't listed above you can contact us @:{" "}
-              <a href="mailto:medbedteam@gmail.com">Med Bed Team</a>
+              <a href="mailto:Info.medbedcenter@gmail.com" className="underline">Med Bed Team</a>
             </p>
           </div>
         </div>
@@ -376,7 +376,7 @@ export default function Media() {
             To apply, fill the training form on our website or contact us
             directly via email:{" "}
             <a
-              href="mailto:medbedtraining@gmail.com"
+              href="mailto:Info.medbedcenter@gmail.com"
               className="text-[#0056b3]"
             >
               {" "}

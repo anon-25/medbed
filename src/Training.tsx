@@ -175,7 +175,9 @@ export default function Training() {
             Ready to Begin?
           </h2>
           <button className="bg-gradient-to-r from-green-400 to-blue-500 cursor-pointer text-white px-6 py-3 rounded-full font-semibold md:text-xl hover:scale-110 transition-transform duration-300">
+            <a href="https://wa.me/+14482009390">
             Click Here to Register for Training
+            </a>
           </button>
           <p className="mt-4 text-xs md:text-lg">
             A $500 USD registration fee is required to secure your training
