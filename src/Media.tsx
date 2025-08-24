@@ -138,15 +138,11 @@ const evenMoreFaq = [
       "Yes. Graduates receive a Med Bed Healing Certification and may apply for roles within our network or start their own center.",
   },
   {
-    title: "How can I purchase a Med Bed?",
-    content:
-      "You can fill out the Med Bed purchase form on our website, contact us directly by email @ Med Bed Booking. or reach us via whatsapp @: Med Bed Team",
-  },
-  {
     title: "How much does the training cost?",
     content:
-      "The training requires a one-time registration fee of $500 USD, which includes all materials, support, and certification.",
+    "The training requires a one-time registration fee of $500 USD, which includes all materials, support, and certification.",
   },
+
 ];
 
 const moreFaq = [
@@ -371,6 +367,17 @@ export default function Media() {
             </p>
           </div>
         ))}
+          <div
+            className="md:w-[60%] mb-5 faq-card transition-all shadow-xl"
+          >
+            <h3 className="bg-[#F8F9FA] pb-6 border-[#dee2e6] border rounded-t-lg font-medium text-lg text-[#2c3e40] font-inter p-4">
+              {" "}
+              How can I purchase a Med Bed?
+            </h3>
+            <p className="border border-[#dee2e6] rounded-b-lg p-5 pb-9">
+              You can fill out the Med Bed purchase form on our website, contact us directly by email @ <a href="mailto:Info.medbedcenter@gmail.com"> Med Bed Booking</a>. or reach us via whatsapp @: <a href="https://wa.me/+14482009390">Med Bed Team</a>
+            </p>
+          </div>
         <div className="md:w-[60%] mb-5 faq-card transition-all shadow-xl">
           <p className="border border-[#dee2e6] rounded-lg p-5 pb-9">
             To apply, fill the training form on our website or contact us
