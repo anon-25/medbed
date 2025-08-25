@@ -36,6 +36,7 @@ app.use(
 // quick debug endpoint to list allowed origins
 app.get("/api/_cors-info", (req, res) => {
   res.json({ allowedOrigins: ALLOWED_ORIGINS });
+  console.log(req);
 });
 
 app.use(bodyParser.json());
