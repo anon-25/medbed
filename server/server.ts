@@ -8,11 +8,35 @@ import path from "path";
 
 const app = express();
 
+const ALLOWED_ORIGINS = [
+  "http://localhost:5173",
+  "https://medbed-alpha.vercel.app",
+  // add your production frontend origin(s) here
+  process.env.VITE_FRONTEND_ORIGIN,
+].filter(Boolean) as string[];
+
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://medbed-alpha.vercel.app/"],
+    origin: function (origin, callback) {
+      // allow requests with no origin (like curl, server-to-server)
+      if (!origin) return callback(null, true);
+      if (ALLOWED_ORIGINS.indexOf(origin) !== -1) {
+        return callback(null, true);
+      } else {
+        return callback(new Error("CORS policy: Origin not allowed"));
+      }
+    },
+    methods: ["GET", "POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: false,
+    optionsSuccessStatus: 200,
   })
 );
+
+// quick debug endpoint to list allowed origins
+app.get("/api/_cors-info", (req, res) => {
+  res.json({ allowedOrigins: ALLOWED_ORIGINS });
+});
 
 app.use(bodyParser.json());
 
@@ -69,12 +93,10 @@ app.post("/api/contact", async (req, res) => {
       ...payload,
       note: "Resend API key missing - saved locally.",
     });
-    return res
-      .status(500)
-      .json({
-        success: false,
-        error: "Email service not configured. Message saved to outbox.",
-      });
+    return res.status(500).json({
+      success: false,
+      error: "Email service not configured. Message saved to outbox.",
+    });
   }
 
   try {
@@ -102,12 +124,10 @@ app.post("/api/contact", async (req, res) => {
       error?.response || "no response"
     );
     await appendOutbox({ ...payload, error: String(error?.message || error) });
-    return res
-      .status(500)
-      .json({
-        success: false,
-        error: "Failed to send email. Saved to outbox.",
-      });
+    return res.status(500).json({
+      success: false,
+      error: "Failed to send email. Saved to outbox.",
+    });
   }
 });
 
