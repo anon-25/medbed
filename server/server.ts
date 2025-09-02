@@ -11,6 +11,7 @@ const app = express();
 const ALLOWED_ORIGINS = [
   "http://localhost:5173",
   "https://medbed-alpha.vercel.app",
+  "https://www.medbedhealingcentre.com",
   // add your production frontend origin(s) here
   process.env.VITE_FRONTEND_ORIGIN,
 ].filter(Boolean) as string[];
