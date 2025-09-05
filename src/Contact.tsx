@@ -9,7 +9,7 @@ const icons = [
   },
   {
     icon: FaTelegram,
-    link: "https://t.me/Medbedbooking",
+    link: "https://t.me/medbedregistration",
     label: "Telegram",
   },
   {
