@@ -568,7 +568,7 @@ export default function Appointment() {
             To complete your payment for the registration contact the MedBed
             Coordination Team via email @:{" "}
             <a
-              href="Info.medbedcenter@gmail.com"
+              href="mailto:Info.medbedcenter@gmail.com"
               className="underline font-normal text-[#0d6ef]"
             >
               {" "}
